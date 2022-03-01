@@ -1,2 +1,2 @@
-# python-issues
-This project is isuues of MENTA.
+# MENTA課題
+

@@ -1,6 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+< 準備 >
+1. 仮想環境を構築(terminalで以下のコマンドを実行する)
+    python -m venv venv
+
+2. 仮想環境に入る(terminalで以下のコマンドを実行する)
+    source venv/bin/activate
+
+3. 仮想環境の中でライブラリをインストール(terminalで以下のコマンドを実行する)
+    pip install --upgrade pip
+    pip install selenium
+    pip install webdriver_manager
+"""
+
 import time
 
 from selenium.webdriver import Chrome, ChromeOptions
@@ -32,13 +46,31 @@ def main():
     # driverを生成
     driver = create_chrome_driver()
 
-    """
-    ここにスクレイピングのプログラムを実装してみよう！
-    """
+    # URLを開く
+    driver.get("https://www.amazon.co.jp/")
+
+    # 検索フォームにキーワードを入力する
+    keyword = "ねこ"
+    form_element = driver.find_element(By.CSS_SELECTOR, "#twotabsearchtextbox")
+    form_element.send_keys(keyword)
+    time.sleep(1)
+
+    # 検索ボタンをクリックする
+    search_button_element = driver.find_element(
+        By.CSS_SELECTOR, "#nav-search-submit-button")
+    search_button_element.click()
+    time.sleep(3)
+
+    # 検索結果から商品名を取得する
+    elements = driver.find_elements(By.CSS_SELECTOR, ".a-size-base-plus.a-color-base.a-text-normal")
+    for element in elements:
+        print(element.text)
+        print("###########")
 
     # driverを削除する
     driver.close()
     driver.quit()
+
 
 if __name__ == "__main__":
     main()

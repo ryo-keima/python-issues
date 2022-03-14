@@ -11,8 +11,7 @@
 
 3. 仮想環境の中でライブラリをインストール(terminalで以下のコマンドを実行する)
     pip install --upgrade pip
-    pip install selenium
-    pip install webdriver_manager
+    pip install -r requirements.txt
 """
 
 import time

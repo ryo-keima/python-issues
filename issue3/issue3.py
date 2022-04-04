@@ -1,11 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import time
-
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 
 
@@ -32,9 +29,28 @@ def main():
     # driverを生成
     driver = create_chrome_driver()
 
-    """
-    ここにスクレイピングのプログラムを実装してみよう！
-    """
+    '''
+    [課題]
+    (1)
+    以下のPythonURLから、issue3_caputure.pngの画像に載っているの文字列とそのURLを全て取得してみよう!
+    https://www.python.org/
+
+    (2) 
+    取得結果はCSVファイルとしてファイル出力してみよう!
+
+    [準備]
+    1. 仮想環境を構築(terminalで以下のコマンドを実行する)
+        python -m venv venv
+
+    2. 仮想環境に入る(terminalで以下のコマンドを実行する)
+        source venv/bin/activate
+
+    3. 仮想環境の中でライブラリをインストール(terminalで以下のコマンドを実行する)
+        pip install --upgrade pip
+        pip install selenium webdriver-manager
+    '''
+
+    # 以下にプログラムを実装してみよう！
 
     # driverを削除する
     driver.close()

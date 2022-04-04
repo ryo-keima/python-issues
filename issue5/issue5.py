@@ -3,7 +3,7 @@
 
 import logging
 
-from config import logging_config  # loggingの設定を読み込むためimportする
+from config import logging_config  # loggingの設定を読み込むためimportしている
 from chrome_driver import ChromeDriver
 
 logger = logging.getLogger(__name__)
@@ -26,7 +26,7 @@ def main():
 
     [条件]
     1. chrome_driver.pyを利用してスクレイピングしてみよう!(足りないメソッドがあったら実装してみよう!)
-    2. output.pyの Outputクラスにファイルの出力に関する処理を実装してみよう!
+    2. output.pyのOutputクラスにファイルの出力に関する処理を実装してみよう!
     """
 
     logger.info("Start")
@@ -34,6 +34,8 @@ def main():
     chrome_driver = ChromeDriver()
     chrome_driver.open_url(
         "https://www.lancers.jp/work/search?open=1&ref=header_menu")
+
+    # 以下に続きを実装してみよう！
 
     chrome_driver.close_driver()
 

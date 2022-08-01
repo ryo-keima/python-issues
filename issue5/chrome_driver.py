@@ -54,10 +54,10 @@ class ChromeDriver(object):
 
         return True
 
-    def get_text(self, target: str, wait: bool = True) -> str:
+    def get_text(self, target: str) -> str:
         text: str = ""
         elements: List[WebElement] = []
-        if self.get_elements(target, elements, wait):
+        if self.get_elements(target, elements):
             text = elements[0].text
 
         return text

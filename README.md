@@ -1,16 +1,17 @@
-# MENTA課題
+# MENTA 課題
 
 ## 目次
 
-- [MENTA課題](#menta課題)
+- [MENTA 課題](#menta-課題)
   - [目次](#目次)
   - [概要](#概要)
   - [課題](#課題)
-    - [issue1の目標](#issue1の目標)
-    - [issue2の目標](#issue2の目標)
-    - [issue3の目標](#issue3の目標)
-    - [issue4の目標](#issue4の目標)
-    - [issue5の目標](#issue5の目標)
+    - [issue1 の目標](#issue1-の目標)
+    - [issue2 の目標](#issue2-の目標)
+    - [issue3 の目標](#issue3-の目標)
+    - [issue4 の目標](#issue4-の目標)
+    - [issue5 の目標](#issue5-の目標)
+    - [issue6 の目標](#issue6-の目標)
   - [環境構築 & 実行](#環境構築--実行)
 
 ## 概要
@@ -23,43 +24,47 @@
 
 本プロジェクトの各`issue{X}`フォルダ以下の課題に挑戦してみましょう！
 
-### issue1の目標
+### issue1 の目標
 
 - ファイルの読み書きができるようになる
 - リスト型に慣れる
 
-### issue2の目標
+### issue2 の目標
 
 - 辞書型に慣れる
-- if文で条件分岐できるようになる
+- if 文で条件分岐できるようになる
 
-### issue3の目標
+### issue3 の目標
 
-- Webスクレイピングができるようになる
+- Web スクレイピングができるようになる
 
-### issue4の目標
+### issue4 の目標
 
--  楽天APIを使用してデータの取得ができるようになる
+- 楽天 API を使用してデータの取得ができるようになる
 
-### issue5の目標
+### issue5 の目標
 
-- Pythonのクラスの概念について理解を深める
+- Python のクラスの概念について理解を深める
+
+### issue6 の目標
+
+- UI を使用したデスクトップアプリを作成できるようになる
 
 ## 環境構築 & 実行
 
-1. PCにPythonをダウンロード&インストールする  
+1. PC に Python をダウンロード&インストールする  
    https://www.python.org/downloads/
-2. 本レポジトリをcloneする
-    ```shell
-    git clone https://github.com/ryo-keima/python-issues.git
-    ```
+2. 本レポジトリを clone する
+   ```shell
+   git clone https://github.com/ryo-keima/python-issues.git
+   ```
 3. 各課題のフォルダに移動する  
-    例:
-    ```shell
-    cd python-issues/issue1
-    ```
+   例:
+   ```shell
+   cd python-issues/issue1
+   ```
 4. 実行する  
-   例: 
+   例:
    ```shell
    python issue1.py
    ```
